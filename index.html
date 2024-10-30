@@ -16,29 +16,32 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
-            <img src="./assets/logo.png" class="img-fluid" alt="image1" style="width: 60px; height: 50px;">
-          <a class="navbar-brand" href="#"><span class="h3 text-light">&nbsp;PDAM</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="./index.html" class="navbar-brand">
+            <img src="/assets/logo.png" class="img-fluid" alt="image1" style="width: 50px; height: 40px;">
+            PDAM
+          </a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about/index.html">About</a>
+                <a class="nav-link" href="./about/index.html">Tentang</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Sign In / Sign Up
+                  Pelayanan
                 </a>
                 <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item text-warning" href="./signin/index.html">Sign In</a></li>
+                  <li><a class="dropdown-item text-light" href="./signin/index.html">Masuk</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-warning" href="./signup/index.html">Sign Up</a></li>
+                  <li><a class="dropdown-item text-light" href="./signup/index.html">Daftar</a></li>
+                  <li><a href="./signin/indextemp.html" class="dropdown-item text-light">Masuk Admin (temp)</a></li>
                 </ul>
             </ul>
           </div>
@@ -46,24 +49,24 @@
       </nav>
     <!-- Navbar End -->
 
-    <!-- First Layout Start -->
+    <!-- Layout Start -->
         <!-- Carousel Image Start -->
-        <div class="" style="background-color: rgb(46, 46, 46);">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="">
+        <div id="carouselExampleIndicators" class="carousel slide p-4 g-4">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner p-4 g-4">
+            <div class="carousel-inner rounded-5">
               <div class="carousel-item active">
-                <img src="./assets/carousel1.jpg" class="d-block w-100" alt="image1" >
+                <img src="/assets/carousel1.jpg" class="d-block w-100" alt="image1" >
               </div>
               <div class="carousel-item">
-                <img src="./assets/carousel2.jpg" class="d-block w-100" alt="image2" >
+                <img src="/assets/carousel2.jpg" class="d-block w-100" alt="image2" >
               </div>
               <div class="carousel-item">
-                <img src="./assets/carousel3.jpg" class="d-block w-100" alt="image3" >
+                <img src="/assets/carousel3.jpg" class="d-block w-100" alt="image3" >
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -77,14 +80,27 @@
           </div>
         </div>
         <!-- Carousel Image End -->
-        <div class="container-fluid">
+
+        <div class="container-fluid mt-0 p-4 g-4 bg-body-tertiary">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p class="text-uppercase fs-2"><b><span class="text-pdam">pdam</span> Tirta Intan</b></p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Quote PDAM
+            </figcaption>
+          </figure>
+          </div>
+          <hr>
+          
         <!-- Card Start -->
-        <div class="row mt-4">
+        <div class="container-fluid">
+        <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0 g-4">
               <div class="card">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Sign Up</h5>
-                  <p class="card-text">Daftar sebagai konsumen baru.</p>
+                  <h5 class="card-title">Registrasi</h5>
+                  <p class="card-text">Registrasi konsumen baru.</p>
                   <a href="#" class="btn btn-dark d-block">Daftar</a>
                 </div>
               </div>
@@ -92,40 +108,27 @@
             <div class="col-sm-6 g-4">
               <div class="card">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Sign In</h5>
-                  <p class="card-text">Masuk sebagai pengguna lama.</p>
+                  <h5 class="card-title">Pembayaran</h5>
+                  <p class="card-text">Melakukan Pembayaran Tagihan</p>
                   <a href="#" class="btn btn-dark d-block">Masuk</a>
                 </div>
               </div>
             </div>
           </div>
-        <!-- Card End -->
-
-        <!-- About Us Start -->
-        <div class="card mt-3 p-2 g-2">
-            <div class="card-header h1 text-center">
-                <span class="text-warning">About</span> Us
-            </div>
-            <div class="card-body">
-                <h5 class="card-title"><span class="text-warning">PDAM</span> Tirta Intan</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quo quae aliquam voluptas nemo provident, voluptatibus omnis inventore odio ipsum. Tempore aperiam ad temporibus necessitatibus consequuntur illum nostrum, nemo eaque fugiat animi sed asperiores eveniet! Inventore dolore modi sequi libero, a id! Veniam, minus quaerat? Cupiditate quaerat nisi fugiat quis!</p>
-                <a href="#" class="btn btn-dark d-block">About</a>
-            </div>
         </div>
-      </div>
-        <!-- About Us End -->
-    <!-- First Layout End -->
+        <!-- Card End -->
+    <!-- Layout End -->
 
     <!-- Footer Start -->
     <footer class="mt-4 text-light">
       <div class="container text-center p-2 g-2">
         <div class="row">
           <div class="col-sm-8 p-4" align="justify">
-            <h4 class="text-warning">PDAM</h4>
+            <h4 class="text-pdam">PDAM</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto facere voluptate ex accusamus officia facilis velit nobis, incidunt recusandae repellat expedita odit odio perspiciatis! Maxime, voluptatibus doloribus atque molestiae qui inventore voluptatem ad sunt minima sit delectus perspiciatis, vitae, unde quos aspernatur. Sapiente unde fuga aperiam nemo ipsam recusandae perspiciatis.</p>
           </div>
           <div class="col-sm-4 p-4" align="justify">
-            <h4 class="text-warning">Alamat</h4>
+            <h4 class="text-pdam">Alamat</h4>
             <table class="table-dark">
                 <tr>
                   <td class="d-flex align-items-start mt-1"><i class="fa-solid fa-location-dot"></i></td>
