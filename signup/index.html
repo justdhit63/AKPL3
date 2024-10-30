@@ -17,27 +17,28 @@
 <body>
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link"  href="../index.html">Home</a>
+                <a class="nav-link"  href="../index.html">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../about/index.html">About</a>
+                <a class="nav-link" href="../about/index.html">Tentang</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Sign In / Sign Up
+                  Pelayanan
                 </a>
                 <ul class="dropdown-menu bg-dark">
-                  <li><a class="dropdown-item text-warning" href="../signin/index.html">Sign In</a></li>
+                  <li><a class="dropdown-item text-light" href="../signin/index.html">Masuk</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-warning" href="../signup/index.html">Sign Up</a></li>
+                  <li><a class="dropdown-item text-light" href="../signup/index.html">Daftar</a></li>
+                  <li><a href="../signin/indextemp.html" class="dropdown-item text-light">Masuk Admin (temp)</a></li>
                 </ul>
             </ul>
           </div>
@@ -76,12 +77,12 @@
               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username">
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" id="passwordKu" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
             </div>
             <div class="mb-3 form-check">
-                <div class="mb-1">
-                    <input type="checkbox" onclick="myFunction()" class="f"><small>&nbsp;Show Password</small>
-                </div>
+              <div class="mb-1">
+                <input type="checkbox" onclick="showHide()" class="f"><small>&nbsp;Tampilkan Password</small>
+            </div>
             </div>
             <div class="d-grid gap-2"><button type="submit" class="btn btn-dark ">Submit</button></div>
           </form>
@@ -93,11 +94,11 @@
         <div class="container text-center p-2 g-2">
           <div class="row">
             <div class="col-sm-8 p-4" align="justify">
-              <h4 class="text-warning">PDAM</h4>
+              <h4 class="text-pdam">PDAM</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto facere voluptate ex accusamus officia facilis velit nobis, incidunt recusandae repellat expedita odit odio perspiciatis! Maxime, voluptatibus doloribus atque molestiae qui inventore voluptatem ad sunt minima sit delectus perspiciatis, vitae, unde quos aspernatur. Sapiente unde fuga aperiam nemo ipsam recusandae perspiciatis.</p>
             </div>
             <div class="col-sm-4 p-4" align="justify">
-              <h4 class="text-warning">Alamat</h4>
+              <h4 class="text-pdam">Alamat</h4>
               <table class="table-dark">
                   <tr>
                     <td class="d-flex align-items-start mt-1"><i class="fa-solid fa-location-dot"></i></td>
@@ -115,6 +116,19 @@
         </div>
       </footer>
       <!-- Footer End -->
+
+      <!-- JS Start -->
+    <script>
+      function showHide() {
+        var inputan = document.getElementById("passwordKu");
+        if (inputan.type === "password") {
+          inputan.type = "text";
+        } else {
+          inputan.type = "password";
+        }
+      } 
+    </script>
+    <!-- JS End -->
 
       <!-- JS Bootstrap & Font Awesome -->
     <script src="https://kit.fontawesome.com/c35fa16be5.js" crossorigin="anonymous"></script>
