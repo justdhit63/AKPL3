@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin's Dashboard</title>
+        <link rel="stylesheet" href="../style.css">
+        <!-- Bootstrap Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap Link -->
+    
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/c35fa16be5.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Boxicons -->
+
+        <!-- Lineicons -->
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <!-- Lineicons -->
+
+      </head>
+<body>
+  <!-- Wrapper -->
+     <div class="wrapper">
+      <!-- Sidebar Start -->
+      <aside class="" id="sidebar">
+        <div class="d-flex">
+          <button type="button" id="toggle-btn">
+            <i class='bx bx-grid-alt'></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="../admin/index.html">Dashboard - Admin&nbsp;</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="../admin/index.html" class="sidebar-link">
+              <i class='bx bxs-dashboard'></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#user" aria-expanded="false" aria-controls="user">
+              <i class='bx bx-user'></i>
+              <span>Kelola User</span>
+            </a>
+            <ul id="user" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item">
+                <a href="../admin/verfikasi.html" class="sidebar-link">Verifikasi</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="../admin/edit.html" class="sidebar-link">Edit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="../admin/kelolaBayar.html" class="sidebar-link">
+              <i class='bx bx-wallet' ></i>
+              <span>Kelola Pembayaran</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../admin/setting.html" class="sidebar-link">
+              <i class='bx bx-cog'></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="../index.html" class="sidebar-link text-danger">
+            <i class='bx bx-log-out-circle'></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <!-- Sidebar End -->
+
+      <!-- Main Page Start -->
+      <div class="main p-3">
+        <div class="container">
+          <span class="text-secondary">Pages /</span>
+            <a href="../admin/index.html" class="text-dark"> <b>Dashboard</b></a>      
+          <hr>
+          <div class="row">
+            <div class="col-sm-8 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <i class='bx bx-user'></i>
+                  <span>Kelola User</span>
+                  <hr>
+                  <div class="row d-flex justify-content-beetween text-center">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <div class="container bg-dark text-light p-3 g-3 rounded-3">
+                        <i class='bx bxs-check-shield'></i>
+                        <span>Verifikasi</span>
+                        <hr>
+                        <span>1.000 <span class="text-secondary">User</span></span>
+                        <a href="../admin/verfikasi.html" class="btn btn-light mt-2 d-block"><i class='bx bxs-check-shield'></i> ></a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="container bg-success text-light p-3 g-3 rounded-3">
+                        <i class='bx bxs-edit'></i>
+                        <span>Edit</span>
+                        <hr>
+                        <span>1.000 <span class="text-dark">User</span></span>
+                        <a href="../admin/edit.html" class="btn btn-light mt-2 d-block"><i class='bx bxs-edit'></i> ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <i class='bx bx-wallet' ></i>
+                  <span>Kelola Pembayaran</span>
+                  <hr>
+                  <div class="row d-flex justify-content-beetween text-center">
+                    <div class="col">
+                      <div class="container bg-dark text-light p-3 g-3 rounded-3">
+                        <i class='bx bxs-check-shield'></i>
+                        <span>Verifikasi Pembayaran</span>
+                        <hr>
+                        <span>1.000 <span class="text-secondary">Pembayaran</span></span>
+                        <a href="../admin/kelolaBayar.html" class="btn btn-light mt-2 d-block"><i class='bx bxs-check-shield'></i> ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <!-- Main Page End -->
+     </div>
+     <!-- Wrapper -->
+     
+
+    <!-- JS -->
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/c35fa16be5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JS -->
+</body>
+</html>
